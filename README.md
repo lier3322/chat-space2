@@ -9,6 +9,7 @@
 ### Association
 - has_many :posts
 - has_many :comments
+a
 
 ## postsテーブル
 |Column|Type|Options|
