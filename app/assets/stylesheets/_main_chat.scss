@@ -1,0 +1,113 @@
+.Mainbar {
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  .OneGroup {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    .GroupContent {
+    margin-left: 40px;
+      .GroupName {
+      color: #333333;
+      font-size: 20px;
+      margin-top: 35px;
+      }
+      .MemberName {
+      color: #999999;
+      font-size: 12px;
+      margin-top: 15px;
+      }
+    }
+    .content__btn--edit {
+      width: 72px;
+      height: 40px;
+      margin-right: 40px;
+      margin-top: 28px;
+      margin-bottom: 28px;
+      border: 1px solid;
+      padding-right: 20px;
+      padding-left: 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #38aef0;
+      line-height: 40px;
+    }
+  }
+  .Spacechat {
+  background-color: #fafafa;
+  height: calc(100vh - 190px);
+    .Chat {
+    padding-top: 35px;
+      .Details {
+      display: flex;
+        .Name {
+          color: #333333;
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+        .Diary {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+    }
+    .Log {
+    margin-top: 46px;
+      &__details {
+      display: flex;
+        &__Logname {
+          color: #333333;
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+        &__Logdiary {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .Sendform {
+    background-color: #d2d2d2;
+    height: 90px;
+    display: flex;
+    .Form {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      width: 100%;
+      position: relative;
+      &__content {
+        padding-left: 10px;
+        width: 100%;
+      }
+      .input-box__image {
+        height: 50px;
+        position: absolute;
+        right: 10px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        display: flex;
+        align-items: flex-start;
+        .Emptyform {
+          display: none;
+        }
+      }
+    }
+    .Send {
+      height: 50px;
+      color: #fff;
+      font-size: 16px;
+      background-color: #38aef0;
+      margin-right: 40px;
+      margin-top:20px ;
+      margin-left: 15px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
