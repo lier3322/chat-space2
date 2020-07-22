@@ -19,18 +19,16 @@
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many :posts_tags
 - has_many  :tags,  through:  :posts_tags
-
-
+- has_many :posts_tags
 
 ## tagsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
 ### Association
-- has_many :posts_tags
 - has_many  :posts,  through:  :posts_tags
+- has_many :posts_tags
 
 ## posts_tagsテーブル
 |Column|Type|Options|
