@@ -40,3 +40,9 @@
 ### Association
 - belongs_to :user
 - belongs_to :group
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> edit-redume-to-C
