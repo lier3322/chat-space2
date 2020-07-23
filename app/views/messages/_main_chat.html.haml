@@ -18,10 +18,10 @@
       .Log__comment 雨とかクソ鬱
   .Sendform
     .Form
-      %input.Form__content{ type: "text", placeholder: "type a message" }
+      %input.Form__content{ :type=> "text", :placeholder=> "type a message" }
       .Image
         %label{class: "input-box__image"}
           %input.Emptyform{type: "file"}
           = icon('far', 'image')
-    %input.Send{ type: "submit", name: "commit" , value: "Send"}
+    %input.Send{ :type=>"submit", :name=> "commit" , :value=> "Send"}
 
