@@ -1,0 +1,27 @@
+.Mainbar
+  .OneGroup
+    %ul.GroupContent
+      %li.GroupName test
+      %li.MemberName member
+    = link_to "#", class: "content__btn content__btn--edit" do
+      Edit
+  .Spacechat
+    .Chat
+      %ul.Details
+        %li.Name masa
+        %li.Diary 2020/07/19
+      .Comment おはよう
+    .Log
+      %ul.Log__details
+        %li.Log__name masa
+        %li.Log__diary 2020/07/18
+      .Log__comment 雨とかクソ鬱
+  .Sendform
+    .Form
+      %input.Form__content{ type: "text", placeholder: "type a message" }
+      .Image
+        %label{class: "input-box__image"}
+          %input.Emptyform{type: "file"}
+          = icon('far', 'image')
+    %input.Send{ type: "submit", name: "commit" , value: "Send"}
+
