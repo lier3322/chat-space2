@@ -1,13 +1,15 @@
 .Header
   .Header__List
-    %p.UserName lier
+    %p.UserName 
+      =current_user.name
     %ul
       %li.Lefticon
         %link_to{ href: "#"}
-          =icon('far', 'fa-edit')
+          = icon('far', 'edit')
       %li.Righticon
         %link_to{ href: "#"}
-          =icon('fas', 'fa-cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog')
 .GroupList
   .OtherUser techcamp
   .message まだメッセージがありません
