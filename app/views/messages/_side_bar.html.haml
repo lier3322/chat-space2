@@ -4,12 +4,16 @@
       =current_user.name
     %ul
       %li.Lefticon
-        %link_to{ href: "#"}
+        = link_to new_group_path do
           = icon('far', 'edit')
       %li.Righticon
-        %link_to{ href: "#"}
-          = link_to edit_user_path(current_user) do
-            = icon('fas', 'cog')
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog')
 .GroupList
-  .OtherUser techcamp
-  .message まだメッセージがありません
+  - current_user.groups.each do |group|
+    .Group
+    = link_to '#' do
+      .Groupname
+        = group.name
+      .message      
+        メッセージはまだありません
