@@ -42,6 +42,7 @@
     }
   }
   .Spacechat {
+  overflow: scroll;
   background-color: #fafafa;
   height: calc(100vh - 190px);
     .Chat {
