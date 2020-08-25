@@ -2,11 +2,10 @@
   .OneGroup
     .GroupContent
       %ul.GroupName
-        - current_user.groups.each do |group|
-          %li.Namegroup= group.name
+        %li.Namegroup= @group.name
       %ul.MemberName 
         - @group.users.each do |user|
-          %li= user.name
+          %li.Member= user.name
     = link_to edit_group_path(@group) , class: "content__btn content__btn--edit" do
       Edit
   .Spacechat
