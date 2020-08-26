@@ -70,6 +70,8 @@ gem 'mini_magick'
 gem 'pry-rails'
 gem 'devise'
 
+gem 'fog-aws'
+
 gem 'jquery-rails'
 
 group :production do
